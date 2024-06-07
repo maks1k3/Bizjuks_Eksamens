@@ -1,0 +1,5 @@
+jautajumi=("")
+
+izveles=("")
+
+atbildes=("")
