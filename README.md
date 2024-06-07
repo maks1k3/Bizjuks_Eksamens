@@ -1,0 +1,2 @@
+# Bizjuks_Eksamens
+Eksāmens
