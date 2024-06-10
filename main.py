@@ -1,4 +1,8 @@
-a=(input("Ievadi vārdu: "))
+import re
+burti=re.compile('^[A-Za-z]+$')
+a=""
+while not burti.match(a):
+    a=(input("Ievadi vārdu: ")).strip().upper()
 
 
 jautajumi=(("1. Kā izveidot ciklu, kas izdrukā skaitļus no 1 līdz 10?"),
@@ -46,8 +50,7 @@ while jautNr<10:
         print(opcija)
         
     izvelesIevade=input("Ievadi savu atbildi  (A, B, C, D):").upper()
-    if izvelesIevade =='q':
-        break
+    
     
     if izvelesIevade in atbildes[jautNr]:
       punkti+=1
