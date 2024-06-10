@@ -2,7 +2,7 @@ import re
 burti=re.compile('^[A-Za-z]+$')
 a=""
 while not burti.match(a):
-    a=(input("Ievadi vārdu: ")).strip().upper()
+    a=(input("Ievadi vārdu: ")).strip()
 
 
 jautajumi=(("1. Kā izveidot ciklu, kas izdrukā skaitļus no 1 līdz 10?"),
