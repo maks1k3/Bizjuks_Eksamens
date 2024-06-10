@@ -44,18 +44,20 @@ while jautNr<10:
     for opcija in izveles[jautNr]:
         print(opcija)
         
-    izvelesIevade=(input("Ievadi savu atbildi  (A, B, C, D):")).upper()
+    izvelesIevade=input("Ievadi savu atbildi  (A, B, C, D):").upper()
     if izvelesIevade =='q':
         break
     
     if izvelesIevade in atbildes[jautNr]:
       punkti+=1
       print("Pareizi!")
+      jautNr+=1
     else:
-        print("Nepareizi!")  
-        jautNr+=1
+      print("Nepareizi!")  
+      jautNr+=1
          
 print("----------")    
 print("Rezulāts: ")
-print("Pareizās atbildes",punkti,"/10")     
+print(" Lietotājam ",a," ir ",punkti,"pareizās atbildes no 10")   
+
   
