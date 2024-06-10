@@ -34,4 +34,7 @@ while jautNr<10:
         print("Nepareizi!")  
         jautNr+=1
          
+print("----------")    
+print("Rezulāts: ")
+print("Pareizās atbildes",punkti,"/10")     
   
