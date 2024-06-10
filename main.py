@@ -37,6 +37,7 @@ atbildes=(("C","D"),
 izveletas=[]
 punkti=0
 jautNr=0
+nepareizieJ=[]
 
 while jautNr<10:
     print("--------")
@@ -54,10 +55,20 @@ while jautNr<10:
       jautNr+=1
     else:
       print("Nepareizi!")  
+      
+      nepareizieJ.append((jautajumi[jautNr],izvelesIevade,atbildes[jautNr]))
       jautNr+=1
-         
 print("----------")    
 print("Rezulāts: ")
 print(" Lietotājam ",a," ir ",punkti,"pareizās atbildes no 10")   
 
-  
+if nepareizieJ:
+    print("Nepareizie jautājumi: ")
+    for jautajums,atbilde,pareizas in nepareizieJ:
+        print(jautajums)
+        print("Tava atbilde: ", atbilde) 
+        print("Pareizās atbildes: ",pareizas)
+elif nepareizieJ==0:
+        print("Visas atbildes ir pareizas")
+else:
+    print("Visas atbildes ir pareizas")
